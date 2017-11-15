@@ -1,0 +1,157 @@
+body,
+html{
+	background-color: #ffffff;
+	font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.row .col{
+	outline: 1px solid #999999;
+}
+/*Clases generales*/
+
+/*Cabecera*/
+header{}
+header nav{}
+header nav{}
+header nav .brand-logo{}
+header nav .brand-logo img{}
+header nav ul#nav-mobile{}
+header nav ul#nav-mobile li{}
+header nav ul#nav-mobile li a{}
+header nav ul#nav-mobile li a:last-child{}
+header nav ul#nav-mobile li a.active,
+header nav ul#nav-mobile li a:hover{}
+
+/*Sección principal*/
+.main-section{
+  text-align: center;
+  color: #ffffff;
+}
+.main-section img{}
+.main-section h2{}
+.main-section h1{}
+
+/*Contador*/
+.main-section .contador{}
+
+/*Qué es el WIAD*/
+.about{}
+.about h2{}
+.about h3{}
+.about h4{}
+.about p{}
+
+/*Fotos*/
+.fotos{}
+.fotos .box-pic-wiad{}
+.fotos .box-pic-wiad a{}
+.fotos .box-pic-wiad a img{}
+.fotos .box-pic-wiad a:hover img{}
+
+/*Conoce la experiencia y videos*/
+.experiencee-wiad{}
+.experiencee-wiad h3{}
+.experiencee-wiad .section-videos{}
+.experiencee-wiad .section-videos iframe{}
+
+.experiencee-wiad .section-list-videos .multiple-videos{}
+.experiencee-wiad .section-list-videos .multiple-videos div{}
+.experiencee-wiad .section-list-videos .multiple-videos iframe{}
+
+/*Tweets*/
+
+/*Sponsor*/
+.sponsor{}
+.sponsor h3{}
+.sponsor h4{}
+.sponsor h4{}
+.sponsor .box-sponsor{}
+.sponsor .box-sponsor.level1{}
+.sponsor .box-sponsor.level2{}
+
+.sponsor .box-sponsor .box-title-sponsor{}
+.sponsor .box-sponsor .box-img-sponsor{}
+.sponsor .box-sponsor .box-img-sponsor img{}
+.sponsor .box-sponsor .box-list-sponsor{}
+.sponsor .box-sponsor .box-list-sponsor ul{}
+.sponsor .box-sponsor .box-list-sponsor ul li{}
+.sponsor .box-sponsor .box-list-sponsor ul li a{}
+.box-btn{}
+.box-btn a{}
+
+/*Info WIAD*/
+
+/*Footer*/
+footer{}
+footer span{}
+footer span a{}
+
+
+/*Top*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(65, 64, 96, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #414060;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+	height: 50px;
+    width: 50px;
+    right: 10px;
+    bottom: 50px;
+  }
+}
