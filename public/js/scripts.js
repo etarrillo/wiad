@@ -38,4 +38,5 @@ $('.multiple-videos').slick({
   slidesToScroll: 4
 });
 
+$('.materialboxed').materialbox();
 
